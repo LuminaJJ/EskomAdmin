@@ -1,0 +1,16 @@
+<!-- TODO: Replace table to table component when https://github.com/angular/material/issues/796 will closed -->
+<div class="table-responsive-vertical md-whiteframe-z1">
+    <table id="terminals" class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th ng-repeat="key in vm.keys track by $index">{{key | capitalize}}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="data in vm.data track by $index">
+                <td ng-repeat="d in data">{{d}}</td>
+         
+            </tr>
+        </tbody>
+    </table>
+</div>
